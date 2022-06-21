@@ -4,7 +4,7 @@ using namespace std;
 int swapalternates(int a[], int size)
 {
     int temp = 0;
-    for (int i = 0; i < size; i += 2)
+    for (int i = 0; i < size-1; i += 2)
     {
         for (int j = i + 1; j <= i + 1; j++)
         {
