@@ -10,12 +10,15 @@ public:
 
 void printList(Node *temp)
 {
+    int count = 0;
     while (temp != NULL)
     {
         cout << temp->data << " ";
         temp = temp->next;
+        count++;
     }
-    cout << endl;
+    cout << endl
+         << count;
 }
 
 // Inserting at beginning of linked list
@@ -97,7 +100,7 @@ int main()
     // Insert at given position in list
     insertAtPosition(head, 5, 5);
     // Delete a node from the list
-    deleteNode(head, 0);
+    // deleteNode(head, 0);
     // Printing the linked list
     printList(head);
 

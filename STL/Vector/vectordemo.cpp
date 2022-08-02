@@ -11,9 +11,9 @@ int main()
     v.emplace_back(5);
     v.erase(v.begin(), v.begin() + 2);
     cout << v.end() - v.begin() << endl;
-    for (auto it = v.begin(); it != v.end(); it++)
+    for (int i = 0; i < v.size(); i++)
     {
-        cout << *it << " ";
+        cout << v[i] << " ";
     }
     return 0;
 }
